@@ -54,6 +54,8 @@
                     <td>{{ number_format($resultado->profit, 2, ',', '.') }}</td>
                     <td class="fw-bold">R$ {{ number_format($resultado->final_value, 2, ',', '.') }}</td>
                     <td>
+                        <a href="{{ route('precificacao.edit', $resultado->id) }}" class="btn btn-sm btn-primary">Editar</a>
+
                         <form action="{{ route('precificacao.delete', $resultado->id) }}" method="POST" style="display:inline-block;">
                             @csrf
                             @method('DELETE')
