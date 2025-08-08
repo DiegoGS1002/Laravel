@@ -1,0 +1,45 @@
+h1{
+    font-weight: 600;
+    color: #444;
+}
+
+h2{
+    h2 {
+    font-size: 1.2rem; /* menor que o padrão */
+    font-weight: 600;
+    color: #555; /* tom mais suave */
+    margin-bottom: .5rem;
+}
+}
+
+.card {
+    border-radius: .75rem;
+}
+
+.form-label {
+    color: #444;
+}
+
+body{
+    background-color: #E4E4E7;
+}
+
+section{
+    max-width: 95%;
+    background-color: #FFFFFF;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1em;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn.btn-success.mb-3{
+    justify-content: space-between;
+}
