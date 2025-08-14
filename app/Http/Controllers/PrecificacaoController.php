@@ -50,7 +50,6 @@ class PrecificacaoController extends Controller
         $base_price = $product_cost * (1 + ($profit / 100));
         $final_value = $base_price * $price_multiplier;
 
-        // Correção: lucro real em percentual
         $real_profit_percent = (($final_value - $product_cost) / $product_cost) * 100;
 
         Precificacao::create([

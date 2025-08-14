@@ -14,7 +14,7 @@
 
 <form action="{{ route('precificacao.store') }}" method="POST" class="row g-3">
     @csrf
-    <!-- Campos do formulário, iguais ao seu código: -->
+    <!-- Campos do formulário -->
     <div class="col-md-6">
         <label for="sku" class="form-label fw-bold">SKU <span class="text-danger">*</span></label>
         <input type="text" name="sku" id="sku" class="form-control" placeholder="obrigatório" required />
@@ -23,7 +23,6 @@
         <label for="description" class="form-label fw-bold">Descrição do produto <span class="text-danger">*</span></label>
         <input type="text" name="description" id="description" class="form-control" placeholder="obrigatório" required />
     </div>
-    <!-- Continue com os outros inputs do formulário aqui -->
     <div class="col-md-4">
         <label for="raw_material_cost" class="form-label fw-bold">Custo Matéria-Prima <span class="text-danger">*</span></label>
         <input type="number" step="0.01" name="raw_material_cost" id="raw_material_cost" class="form-control" placeholder="obrigatório" required />
